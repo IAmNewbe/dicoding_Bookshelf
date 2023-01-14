@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+input, button {
+    font-family: 'Open Sans', sans-serif;
+    /* background: url("mona.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.HEAD {
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002447;
+    color: white;
+    box-shadow: 4px 10px 30px -9px rgba(0,0,0,0.65);
+-webkit-box-shadow: 4px 10px 25px -9px rgba(0,0,0,0.65);
+-moz-box-shadow: 4px 10px 25px -9px rgba(0,0,0,0.65);
+}
+
+main {
+    margin: 0 auto;
+    padding: 16px;
+    width: 90%;
+
+}
+
+.Form_Buku {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #0ba19e;
+    box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+}
+
+.Form_Buku > h2 {
+    text-align: center;
+    color: white;
+}
+
+.Form_Buku > form > .input {
+    margin: 8px 0;
+}
+
+.Form_Buku > form > button {
+    background-color: #feb249;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+.Form_Buku > form > button:hover {
+    background: white;
+    color: cornflowerblue;
+}
+.Form_Buku > form > button > span {
+    font-weight: bold;
+}
+
+.Form_Buku > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.Form_Buku > form > .input > label {
+    color: white;
+    font-weight: bold;
+}
+
+.Form_Buku > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.Form_Buku > form > .input_inline > label {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.Form_Cari {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    background: aliceblue;
+    box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+}
+
+.Form_Cari > h2 {
+    color: black;
+}
+
+.Form_Cari > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.Form_Cari > form > label {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.Form_Cari > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Form_Cari > form > a {
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Form_Cari > form > a:hover {
+    background: #002447;
+    color: white;
+}
+.Fitur {
+    margin-bottom: 16px;
+    /* text-shadow: 0 0 3px black; */
+    padding: 36px;
+    color: white;
+    border-radius: 10px;
+    background-color: #25424c;
+    box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+}
+
+.Fitur h2 {
+    text-align: center;
+}
+
+.book_shelf {
+    margin: 0 0 20px 20px;
+    padding: 16px 36px;
+    border-radius: 10px;
+    background: #002447;
+    box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 2px 0px 20px -5px rgba(0,0,0,0.65);
+}
+.book_shelf > h2 {
+    color: white;    
+}
+
+.book_shelf > .book_list {
+    padding: 1px;
+}
+article {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 0px 10px -5px rgba(0,0,0,0.65) ;
+    -webkit-box-shadow: 2px 0px 15px -5px rgba(0,0,0,0.65) ;
+    -moz-box-shadow: 2px 0px 10px -5px rgba(0,0,0,0.65) ;
+    border: white;
+}
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px 0;
+    
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.book_shelf > .book_list > .book_item > .action > button:hover {
+    background: cornflowerblue;
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .yellow {
+    background-color: rgb(241, 121, 0);
+    color: white;
+}
+
+input {
+    color: black;
+    background: white;
+    box-shadow: 2px 0px 10px -5px rgba(0,0,0,0.65) inset;
+    -webkit-box-shadow: 2px 0px 15px -5px rgba(0,0,0,0.65) inset;
+    -moz-box-shadow: 2px 0px 10px -5px rgba(0,0,0,0.65) inset;
+    border: white;
+}
+.kiri {
+    float: left;
+    width: 45%;
+}
+.kanan {
+    float: right;
+    width: 55%;
+    padding-left: 8px;
+    
+}
+
+@media screen and (max-width: 900px) { /*Recponsive*/
+    .kiri,
+    .kanan {
+      width: 100%;
+      padding: 0;
+    }
+    .Form_Cari > form {
+        padding: 16px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    .book_shelf {
+        margin: 0 0 20px 0;
+    }
+}

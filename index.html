@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="HEAD">
+  <h1 class="head_bar__title">Responsive Bookshelf Apps</h1>
+</header>
+<main>
+  <div class="kiri">
+    <section class="Form_Buku">
+      <h2>Masukkan Buku Baru</h2>
+      <form id="inputBuku">
+        <div class="input">
+          <label for="inputJudul">Judul</label>
+          <input id="inputJudul" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputPenulis">Penulis</label>
+          <input id="inputPenulis" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputTahun">Tahun</label>
+          <input id="inputTahun" type="number" required>
+        </div>
+        <div class="input_inline">
+          <label for="inputCheckclist">Selesai dibaca</label>
+          <input id="inputCheckclist" type="checkbox">
+        </div>
+        <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+      </form>
+    </section>
+    <section class="Form_Cari">
+      <h2>Cari Buku</h2>
+      <form id="searchBook">
+        <label for="searchBookTitle">Judul</label>
+        <input id="searchBookTitle" type="text" onkeyup="searchBook()">
+        <a id="searchSubmit" href="#cariBuku">Cari</a>
+      </form>
+    </section>
+    <section class="Fitur">
+      <h2>Fitur - fitur :</h2>
+      <ul>
+        <li>Memasukkan Data Buku: Jika box <em><strong>Selesai dibaca</strong> </em> dicentang maka
+        akan masuk ke box selesai dibaca</li>
+        <li>Dapat Mencari data buku secara live di box <em><strong>Cari Buku</strong></em></li>
+        <li>Dapat memindahkan buku dari box <em><strong> Selesai dibaca</strong></em> ke box 
+        <em><strong>Selesai dibaca</strong></em> dengan menekan button <em><strong>Belum Selesai</strong></em></li>
+        <li>Dapat Mengedit Data Buku</li>
+        <li>Dapat Menghapus Buku</li>
+        <li>Suluruh Progeress tersimpan dalam <em><strong>Local Storage</strong></em> 
+        sehingga data tetap tersimpan apabila browser ditutup</li>
+        <li>Responsive sehingga dapat digunakan di device manapun</li>
+      </ul>
+    </section>
+  </div>
+  <div class="kanan">
+    <aside>
+      <section class="book_shelf" id="cariBuku">
+        <h2>Belum selesai dibaca</h2>
+        
+        <div id="belumSelesai" class="book_list">
+
+        </div>
+      </section>
+      
+      <section class="book_shelf">
+        <h2>Selesai dibaca</h2>
+        
+        <div id="sudahSelesai" class="book_list">
+   
+        </div>
+      </section>
+    </aside>
+  </div>
+</main>
+<script src="main.js"></script>
+
+</body>
+</html>
